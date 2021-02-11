@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  from_airport_id: 1
+  to_airport_id: 1
+  duration: 1
+  scheduled_on: 2021-02-11 16:45:53
+
+two:
+  from_airport_id: 1
+  to_airport_id: 1
+  duration: 1
+  scheduled_on: 2021-02-11 16:45:53
