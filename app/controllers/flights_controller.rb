@@ -7,7 +7,7 @@ class FlightsController < ApplicationController
         flash.now[:alert] = "Departure airport is missing"
       elsif params[:to_airport_id].blank?
         flash.now[:alert] = "Destination airport is missing"
-      elsif params[:pax].blank?
+      elsif params[:no_of_passengers].blank?
         flash.now[:alert] = "Please choose the number of passengers"
       elsif params[:from_airport_id] == params[:to_airport_id]
         flash.now[:alert] = "Please check your input"
