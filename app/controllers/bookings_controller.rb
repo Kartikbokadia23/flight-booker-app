@@ -12,6 +12,7 @@ class BookingsController < ApplicationController
       @booking = Booking.new(booking_params)
       if @booking.save
         flash[:notice] = 'Booking successfully completed!'
+        PassengerMailer.with(booking_id: @booking.id).thank_you.deliver_now
  
         redirect_to booking_path(@booking)
       else
